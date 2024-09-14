@@ -1,0 +1,92 @@
+@use 'sass:math';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:string';
+
+$maxWidth: 1920;
+$phoneWidth: 375;
+$maxWidthContainer: 1724;
+$phoneWidthFontSize: 768;
+
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return math.div($number, ($number * 0 + 1));
+    }
+
+    @return $number;
+}
+
+@function remove($list, $value, $recursive: false) {
+    $result: ();
+
+    @for $i from 1 through length($list) {
+        @if type-of(nth($list, $i)) == list and $recursive {
+            $result: append(
+                $result,
+                remove(nth($list, $i), $value, $recursive)
+            );
+        } @else if nth($list, $i) != $value {
+            $result: append($result, nth($list, $i), space);
+        }
+    }
+
+    @return $result;
+}
+
+@function ac(
+    $startSize,
+    $minSize,
+    $minBreakPoint: $phoneWidth,
+    $startBreakPoint: $maxWidth
+) {
+    $difference: $startSize - $minSize;
+    $addSize: strip-unit($difference);
+
+    @if $difference > 0 {
+        @return clamp(
+            $minSize,
+            calc(
+                #{$minSize} + #{$addSize} *
+                    (
+                        (100vw - #{$minBreakPoint}px) / #{$startBreakPoint -
+                            $minBreakPoint}
+                    )
+            ),
+            $startSize
+        );
+    } @else {
+        @return clamp(
+            $startSize,
+            calc(
+                #{$minSize} + #{$addSize} *
+                    (
+                        (100vw - #{$minBreakPoint}px) / #{$maxWidthContainer -
+                            $minBreakPoint}
+                    )
+            ),
+            $minSize
+        );
+    }
+}
+
+@function rc(
+    $startSize,
+    $minSize,
+    $minBreakPoint: $phoneWidth,
+    $startBreakPoint: $maxWidth
+) {
+    $difference: $startSize - $minSize;
+    $addSize: strip-unit($difference);
+    $startSizeWithoutPx: strip-unit($startSize);
+    $vw: vw($startSizeWithoutPx, $startBreakPoint);
+
+    @if $difference > 0 {
+        @return clamp(#{$minSize}, #{$vw}, #{$startSize});
+    } @else {
+        @return clamp(#{$startSize}, #{$vw}, #{$minSize});
+    }
+}
+
+@function perc($number1, $number2: $maxWidth) {
+    @return percentage(math.div($number1, $number2));
+}

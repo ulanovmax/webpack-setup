@@ -1,0 +1,138 @@
+{
+  "en": {
+    "menu": {
+      "about": "About us",
+      "services": "Services",
+      "description": "The most lucrative opportunities for online earning are now one step closer, regardless of your education and age."
+    },
+
+    "base": {
+      "login": "Login",
+      "register": "Register",
+      "join": "Join",
+      "why": "Why",
+      "our": "our",
+      "possibilities": "possibilities",
+      "quickLinks": "Quick Links",
+      "contract": "Contract offer",
+      "contacts": "Contacts"
+    },
+
+    "location": "Hrets'ka Square 3/4 4th floor office 441",
+
+    "months": {
+      "february": "february",
+      "march": "march",
+      "may": "may"
+    },
+
+    "hero": {
+      "description": "A unique platform with a suite of business tools to turn your desires into real opportunities and financial stability."
+    },
+
+    "whySection": {
+      "description": [
+         "Do you want to live abundantly and be successful? Dream of traveling without being financially constrained, or more precisely, unaffected by financial scarcity? We will help you become successful and receive dividends from your chosen path for a lifetime.",
+         "The training on the platform is designed to help everyone, regardless of financial knowledge, internet work experience, or material well-being, start earning $1,000 per month from scratch.",
+         "We provide a comprehensive set of knowledge from our qualified coaches and experts in the field. It is this knowledge base, gained through their own experience, that aids in earning and further multiplying income."
+      ]
+    },
+
+    "services": {
+      "description": "Starting a new venture, beginners often encounter difficulties that can be overwhelming. Below, we have listed only a portion of popular tools capable of addressing issues and helping you start earning successfully with the Vinex Trade team.",
+      "list": {
+        "vinMatrix": "The tool enables active partners of the company to earn through a matrix algorithm in accordance with the marketing plan.",
+        "vinInvest": "A combined business model of active and passive earnings. Investors generate passive income from their investments, while active partners can increase their income by promoting the business through the referral system, following the marketing plan.",
+        "cashback": "The concept of the loyalty program is such that the company offers the partner a partial refund of funds to their account for the remaining money on the account.",
+        "vinEvents": "Participate in events and contests where you can receive a cash reward. Additionally, there is an opportunity to earn extra income by completing simple tasks.",
+        "vinSchool": "Exclusive educational materials from leaders and partners of the company. Provided by the company as part of training programs, marketing strategies, and knowledge exchange with partners.",
+        "p2p": "Internal exchange of assets among the company's partners."
+      }
+    },
+
+    "manager": {
+      "title": ["Team", "founder"],
+      "name": "Vitaly Nemerenko",
+      "description": "The head of the Vinex Trade platform, an entrepreneur with years of experience, business trainer, trader, and undoubtedly a good person."
+    },
+
+    "roadmap": {
+      "list": [
+        {
+          "title": "Platform launch",
+          "description": "Commencement of registrations on the Vinex Trade platform"
+        },
+        {
+          "title": "Vinex pay",
+          "description": "Vinex Pay, a multi-currency cryptocurrency wallet, has been launched."
+        },
+        {
+          "title": "Vinex Invest",
+          "description": "Vinex Invest investment direction has been launched (beta version)."
+        },
+        {
+          "title": "Vinex Signals Bot",
+          "description": "Launch of the signal robot for the Binance exchange."
+        },
+        {
+          "title": "Vinmatrix",
+          "description": "Matrix direction Vinmatrix."
+        },
+        {
+          "title": "Trip to Egypt",
+          "description": "Trip to Egypt promotion by Vinex Invest (all-inclusive)."
+        },
+        {
+          "title": "Vinex SMM",
+          "description": "Social media and network promotion service."
+        }
+      ]
+    },
+
+    "faq": [
+      {
+        "q": "What is vinex trade?",
+        "a": [
+          "Vinex Trade offers tremendous opportunities to earn money. We strive to help our users maximize their skills and experience. Furthermore, the company provides the opportunity to become a member of an initiative team and act as inspirers and leaders of change at the \"heart\" of the company.",
+          "VinexTrade has brought together a team of professionals with a broad range of knowledge and experience in their respective fields, providing users with reliability and quality in the services offered.",
+          "The most important thing is to see in practice how the company achieves its goals and what successes it demonstrates in its work. The presence of real business results and the effectiveness of Vinex Trade's operations over time illustrate how this knowledge and experience transform into actual activities and services on official platforms.",
+          "Moreover, VinexTrade has extensive global coverage, allowing it to gather a greater amount of information, ideas, and experiences from various cultures. This contributes to the development of more effective strategies and ensures greater success on a global scale. Furthermore, the presence of a broad geographical reach enables the company to operate with a large number of users and clients worldwide, ensuring more stable and sustainable growth."
+        ]
+      },
+      {
+        "q": "Team",
+        "a" : [
+          "The visionary inspiration and leader of the company is its founder, Vitaliy Nemerenko. He has successfully brought together a team of professionals with diverse specializations.",
+          "This has allowed the company to have broad knowledge and experience, as well as diverse perspectives when making decisions."
+        ]
+      },
+      {
+        "q": "What are the risks of the platform?",
+        "a": [
+          "The company Vinex Trade, like any financial organization, is susceptible to various financial, operational, and reputational risks.",
+          "To mitigate these risks, the company employs various risk management methods, including investment diversification. Rigorous control and monitoring of finances, as well as improvements in operational processes and strengthening the reliability of investments, are implemented."
+        ]
+      },
+      {
+        "q": "What are the company's guarantees?",
+        "a": "The company's assets serve as guarantees. The Public Offer Agreement is presented on the website."
+      },
+      {
+        "q": "Where are you registered?",
+        "a": [
+          "The company is registered in Ukraine.",
+          "Extract from the Unified State Register of Legal Entities, Individual Entrepreneurs, and Public Associations."
+        ]
+      },
+      {
+        "q": "Where does the money come from?",
+        "a": [
+          "Money in the company comes from various sources, including:",
+          "Investments in various online financial instruments, such as trading, staking, ICOs.",
+          "Investments in various real sectors of the economy, such as commercial real estate, car rental, and construction equipment, construction.",
+          "You can find more details about the business directions on the official public resources of the company."
+        ]
+      }
+    ]
+  }
+}

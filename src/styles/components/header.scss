@@ -1,0 +1,181 @@
+.header {
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    &__nav {
+        margin-right: 30px;
+    }
+
+    .btn {
+        font-weight: 400;
+    }
+
+    .menu {
+        gap: 30px;
+        text-transform: uppercase;
+
+        &__link {
+            background: var(--grad-2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: rgba(255, 255, 255, 1);
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0);
+            }
+        }
+    }
+
+    .decor {
+        background: var(--grad);
+        border-radius: 5px;
+        bottom: 0;
+        height: 4px;
+        left: var(--left-position-span);
+        opacity: 0;
+        position: absolute;
+        transition: var(--span-transition);
+        width: var(--width-span);
+        z-index: -1;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: $mobile-menu-start-point) {
+        &__nav {
+            display: none;
+        }
+    }
+
+    @include media(641) {
+        &__buttons {
+            display: none;
+        }
+    }
+}
+
+.mobile-header {
+    background: var(--grad-dark);
+    display: none;
+    height: calc(var(--vh, 1vh) * 100);
+    max-width: 100%;
+    min-width: 320px;
+
+    padding: 130px 0 35px;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 100;
+    transform: translateX(-100%);
+
+    [data-simplebar] {
+        max-height: calc(calc(var(--vh, 1vh) * 100) - 335px);
+
+        .simplebar-scrollbar:before {
+            background: var(--pink);
+        }
+    }
+
+    &__contacts {
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .cont {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .mobile-header__contacts {
+            margin-top: auto;
+        }
+    }
+
+    .menu__link {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    &.active {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @media (max-width: $mobile-menu-start-point) {
+        display: block;
+    }
+}
+
+.burger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .line {
+        stroke-linecap: round;
+        fill: none;
+        stroke: var(--white);
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    &.active {
+        .line1 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+            stroke-width: 6;
+        }
+
+        .line2 {
+            stroke-dasharray: 1 60;
+            stroke-dashoffset: -30;
+            stroke-width: 6;
+        }
+
+        .line3 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+            stroke-width: 6;
+        }
+    }
+
+    @media (max-width: $mobile-menu-start-point) {
+        display: flex;
+    }
+}

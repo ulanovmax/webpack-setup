@@ -1,0 +1,62 @@
+:root {
+    --font-main: 'Open Sans', sans-serif;
+
+    /* --mobile-menu-start-point and @custom-media --mobile-menu-start-point must be the same */
+    --mobile-menu-start-point: 1200;
+
+    --vh: calc(100vh / 100);
+
+    // Colors
+    --white: #fff;
+    --main-dark: #21192c;
+    --main-black: #080211;
+
+    --dark-purple: #2d1837;
+    --light-purple: #6d14ce;
+    --pink: #b41d9f;
+
+    --grey: #828282;
+
+    --grad: linear-gradient(266deg, #6713d2 0.4%, #cc208e 98.74%);
+    --grad-dark: linear-gradient(
+        180deg,
+        #291f37 -11.15%,
+        #140f1b 57.97%,
+        #291f37 122.9%
+    );
+    --grad-2: linear-gradient(267deg, #6713d2 -78.9%, #cc208e 150.94%);
+
+    // For swiper
+    --swiper-pagination-color: var(--pink);
+    --swiper-pagination-bullet-inactive-color: var(--white);
+    --swiper-pagination-bottom: -5px;
+}
+
+$mobile-menu-start-point: 1024px;
+$mobile-menu-end-point: 1025px;
+
+@media (max-width: $mobile-menu-start-point) {
+    /* Styles for mobile menu start point */
+}
+
+@media (min-width: $mobile-menu-end-point) {
+    /* Styles for mobile menu end point */
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 0 rgba(103, 19, 210, 0.45);
+    }
+    70% {
+        box-shadow: 0 0 0 35px rgba(103, 19, 210, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(103, 19, 210, 0);
+    }
+}
